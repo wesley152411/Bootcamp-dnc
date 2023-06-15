@@ -1,0 +1,52 @@
+
+
+body {
+    margin:0px;
+    padding: 0px;
+}
+    
+    #mainPrincipal {
+        width:97,1%;
+        height:97,1%;
+        padding:20px;
+        border:1px solid black;
+        
+        background-color: #303030;
+        display: flex;
+        justify-content:space-between;
+        border-bottom: 1px solid #BABABA;
+    }
+        #mainPrincipal div a {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-weight:600;
+            color: rgb(250, 249, 249);
+            text-decoration: none;
+            align-items: center;
+            font-size: 17px;
+        }
+        #mainPrincipal div a:hover {
+            color: #CCCCCC;      /* farzer com que quando vc passa o mause emcima do link mude de cor */
+        }
+        #menu {
+            display:flex;
+            width: 55%;
+            justify-content:space-around;
+            align-items: center;
+        }
+        #mainPrincipal button {
+            margin-right: 5%;
+            background-color: rgb(47, 47, 250);
+            border:0px;
+            color: white;
+
+            height:30px;
+            width: 80px;
+
+            font-family: 'inter';
+            font-size: 15px;
+            font-weight: 600;
+
+            box-shadow: 3px 2px 4px  rgba(12, 112, 242, 0.25);    /* fazer o button ter uma sombra */
+            cursor: pointer;
+        }
