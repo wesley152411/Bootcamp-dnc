@@ -1,9 +1,23 @@
 
+:root {
+    --azul-dnc: #0c70f2;
+    --preto-dnc: #303030;
+    --cinza-hover: #C9C9C9;
+
+    --fonte-hover: 'Inter';
+}
+
+
 
 body {
     margin:0px;
     padding: 0px;
+
+    
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(13, 110, 236, 0) 24.84%), #303030;
+    background-repeat: no-repeat;
 }
+
     
     #mainPrincipal {
         width:97,1%;
@@ -11,7 +25,7 @@ body {
         padding:20px;
         border:1px solid black;
         
-        background-color: #303030;
+        background-color: var(--preto-dnc);
         display: flex;
         justify-content:space-between;
         border-bottom: 1px solid #BABABA;
@@ -26,7 +40,7 @@ body {
             font-size: 17px;
         }
         #mainPrincipal div a:hover {
-            color: #CCCCCC;      /* farzer com que quando vc passa o mause emcima do link mude de cor */
+            color: var(--cinza-hover);      /* farzer com que quando vc passa o mause emcima do link mude de cor */
         }
         #menu {
             display:flex;
@@ -50,3 +64,104 @@ body {
             box-shadow: 3px 2px 4px  rgba(12, 112, 242, 0.25);    /* fazer o button ter uma sombra */
             cursor: pointer;
         }
+        /* Seção princial do site */
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            
+            margin-top:100px;
+            margin-bottom:100px;
+        }
+
+            header {
+                color: white;
+                font-family: var(--fonte-hover);
+            }
+            header h1 {
+                font-size: 80px;
+                font-weight:800px;
+                text-align: center;
+
+                margin-bottom: 22px;
+            }
+            header h2 {
+                text-align:center;
+                font-size: 40px;
+                font-weight:700px;
+
+                margin-bottom: 100px;
+            }
+            header .invert {
+                background-color: black;
+                font-weight: bold;
+                padding: 5px;
+
+
+            }
+            
+            /* Formulario */
+            
+            form {
+                color:white;
+                font-family: var(--fonte-hover);
+                font-size: 30px;
+                font-weight: 600;
+                width: 600px;
+            }
+
+            .formGrup {
+                display: flex;
+                flex-direction:column;
+                margin-top:10px;
+                margin-bottom: 10px;
+            }
+            
+            form input {
+                border-radius: 10px;
+                height:30px;
+                border: 0px;
+
+                font-size: 20px;
+                padding: 10px;
+
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+            
+            form label {
+                margin: 10px 0px 10px 0px;
+            }
+
+            form input::placeholder {
+                color: rgba(57, 57, 57, 0.5);
+            }
+
+            .chackboxItens label {
+                font-size: 25px;
+            }
+
+            .chackboxItens {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            input[type="checkbox"] {
+                transform: scale(1.7);
+            }
+
+            .button  {
+                background-color: rgba(12, 112, 242, 0.9);
+                width: 100%;
+                border: 0px;
+                border-radius: 9px;
+                height:50px;
+                margin-top: 70px;
+
+                font-size: 29px;
+                color: white;
+
+                box-shadow:  0px 6px 4px  rgba(12, 112, 242, 0.25);
+                cursor: pointer;
+            }
