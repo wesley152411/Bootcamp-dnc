@@ -165,3 +165,143 @@ body {
                 box-shadow:  0px 6px 4px  rgba(12, 112, 242, 0.25);
                 cursor: pointer;
             }
+
+            /* Footer */ 
+
+            footer {
+                width: 100%;
+                background-color: var(--azul-dnc);
+            }
+
+            footer .line1 {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            footer ul {
+                list-style: none;
+                padding:0px;
+                
+            }
+
+            footer nav {
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+
+                height: 400px;
+            }
+
+            footer h5 {
+                text-align: center;
+                color: white;
+
+                font-weight: 800;
+                font-size: 25px;
+                font-family: var(--fonte-hover);
+
+                background-color: var(--preto-dnc);
+                border-radius: 8px;
+
+                padding: 5px 13px 5px 13px;
+                margin-bottom: 10px;
+            }
+
+            footer ul li {
+                text-align: center;
+                color: white;
+
+                font-weight: 600;
+                font-size: 20px;
+                font-family: var(--fonte-hover);
+
+                margin: 20px 0px 20px 0px;
+            }
+
+            footer ul li a {
+                color: white;
+                text-decoration: none;
+            }
+
+            footer ul li a:hover {
+                color: var(--cinza-hover);
+            }
+
+            footer .endereco {
+                font-weight: 600;
+                font-size: 18px;
+                font-family: var(--fonte-hover);
+                color: white;
+            }
+
+            footer .line2{
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                padding: 15px 0px 15px 0px;
+            }
+
+            footer .line2 a {
+                font-family: var(--fonte-hover);
+                font-size: 20px;
+                font-weight: 600;
+                
+                color: white;
+
+                text-decoration: none;
+
+                padding: 8px;
+            }
+
+            footer .line2 a:first-child {      /* Fazer com que tenha um traço entre dois textos EX: Termos de Uso I Politica de Privasidade */ 
+                border-right: 3px solid white;
+            }
+
+            footer .line2 a:hover {
+                color: var(--cinza-hover);
+            }
+
+            @media only screen and (max-width: 600px){
+                
+                /* Menu */
+                #mainPrincipal{
+                    flex-direction: column;
+                    
+                }
+
+                #menu{
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                #mainPrincipal button{
+                    width: 100%;
+                    
+                }
+
+
+                #menu a {
+                    height: 30px;
+                }
+
+                /* Section */
+
+                section h1 {
+                    font-size: 45px;
+                }
+
+                section h2 {
+                    font-size: 28px;
+                    padding: 0px 15px 0px 15px;
+                }
+
+                form {
+                    width: 95%;
+                    font-size: 20px;
+                }
+
+                .chackboxItens  label{
+                    font-size: 15px;
+                }
+            }
