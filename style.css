@@ -304,4 +304,17 @@ body {
                 .chackboxItens  label{
                     font-size: 15px;
                 }
+
+                /* Footer */
+
+            footer .line1{
+                flex-direction: column;
+                margin-bottom: 30px;
             }
+
+            footer .line2 a {
+                font-size: 18px;
+            }
+            }
+
+            
